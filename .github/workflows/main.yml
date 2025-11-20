@@ -46,7 +46,6 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.14' # Specify your Python version
-        cache: 'pip'
 
     - name: Build Executable with Nuitka Action
       uses: Nuitka/Nuitka-Action@main
