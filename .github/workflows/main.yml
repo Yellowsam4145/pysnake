@@ -27,6 +27,7 @@ jobs:
         if (Test-Path requirements.txt) {pip install -r requirements.txt}
 
     - name: Build with Nuitka
+      mode: onefile
       run: |
         python -m nuitka --standalone --onefile --output-filename=snakewin.exe --assume-yes-for-downloads snake.py
       
